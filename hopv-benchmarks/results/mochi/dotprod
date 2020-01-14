@@ -1,0 +1,43 @@
+sat
+(model
+  (define-fun |dotprod_aux$unknown:10|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) ) Bool
+    (or (= (+ v_1 (* (- 1) v_4)) 0) (and (= (+ v_2 (* (- 1) v_4)) 0) (>= v_1 0) (>= (+ (* (- 1) v_1) v_2) 1) (= (+ v_2 (* (- 1) v_3)) 0) (not (= (+ v_1 (* (- 1) v_4)) 0)) (>= (+ (* (- 1) v_1) v_3) 1)))
+  )
+  (define-fun |sub$unknown:15|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= v_0 0) (>= (+ v_1 (* (- 1) v_0)) 1))
+  )
+  (define-fun |update$unknown:20|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |make_array$unknown:13|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ v_0 (* (- 1) v_1)) 0)
+  )
+  (define-fun |arraysize$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ v_0 (* (- 1) v_1)) 0)
+  )
+  (define-fun |dotprod$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (|dotprod_aux$unknown:10| 0 0 v_0 v_1 v_1)
+  )
+  (define-fun |dotprod_aux$unknown:11|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) ) Bool
+    true
+  )
+  (define-fun |dotprod$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |sub$unknown:16|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= v_1 0) (= v_0 0) (>= (+ (* (- 1) v_1) v_2) 1) (|sub$unknown:15| v_1 v_2))
+  )
+  (define-fun |update$unknown:19|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    false
+  )
+)

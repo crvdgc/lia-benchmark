@@ -1,0 +1,51 @@
+sat
+(model
+  (define-fun |read_$unknown:19|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (= v_1 0) (= (+ v_0 (- 1)) 0) (= (+ v_0 (- 3)) 0))
+  )
+  (define-fun |f$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |readit$unknown:21|
+    ( (v_0 Int) ) Bool
+    (exists ( (v_1 Int) ) (and (not (= v_1 0)) (|read_$unknown:19| v_0 v_1)))
+  )
+  (define-fun |closeit$unknown:5|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (and (= (+ v_0 (- 2)) 0) (= (+ (- 1) v_1) 0)) (and (= (+ v_1 (- 3)) 0) (= (+ v_0 (- 3)) 0)))
+  )
+  (define-fun |close_$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (or (and (= (+ v_0 (- 2)) 0) (not (= v_2 0)) (= (+ (- 1) v_1) 0)) (and (= (+ v_1 (- 3)) 0) (not (= v_2 0)) (= (+ v_0 (- 3)) 0)) (and (= (+ v_0 (* (- 1) v_1)) 0) (= v_2 0)))
+  )
+  (define-fun |f$unknown:9|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |read_$unknown:20|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (or (exists ( (v_3 Int) ) (and (= (+ v_0 (- 1)) 0) (not (= v_3 0)) (not (= v_2 0)) (= (+ (- 1) v_1) 0) (|read_$unknown:19| v_1 v_2) (|read_$unknown:19| 1 v_3))) (exists ( (v_4 Int) ) (and (= (+ v_1 (- 3)) 0) (not (= v_4 0)) (= (+ v_0 (- 3)) 0) (not (= v_2 0)) (|read_$unknown:19| v_1 v_2) (|read_$unknown:19| 3 v_4))) (and (= (+ v_0 (* (- 1) v_1)) 0) (= v_2 0) (|read_$unknown:19| v_1 0)))
+  )
+  (define-fun |loop$unknown:15|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |g$unknown:12|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (or (and (= (+ v_0 (- 1)) 0) (= (+ (- 1) v_1) 0)) (and (= v_0 0) (= v_1 0)))
+  )
+  (define-fun |g$unknown:13|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |next$unknown:17|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (and (= (+ v_0 (- 1)) 0) (= v_1 0)) (and (not (= v_1 0)) (= (+ v_0 (- 3)) 0)))
+  )
+  (define-fun |readit$unknown:22|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (exists ( (v_2 Int) ) (and (= (+ v_0 (- 1)) 0) (not (= v_2 0)) (= (+ (- 1) v_1) 0) (|read_$unknown:19| 1 v_2))) (exists ( (v_2 Int) ) (and (= (+ v_1 (- 3)) 0) (= (+ v_0 (- 3)) 0) (not (= v_2 0)) (|read_$unknown:19| 3 v_2))))
+  )
+)

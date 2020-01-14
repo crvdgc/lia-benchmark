@@ -1,0 +1,131 @@
+sat
+(model
+  (define-fun |$innerFunc:4-aux1$unknown:29|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |update$unknown:75|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:8-loop$unknown:55|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (>= v_1 1)
+  )
+  (define-fun |$innerFunc:3-dotsPrint$unknown:22|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:6-aux2$unknown:44|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:4-aux1$unknown:28|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (or (= (+ (* (- 1) v_1) v_0) 0) (>= v_0 0)) (>= (+ v_1 (* (- 1) v_0)) 0))
+  )
+  (define-fun |$innerFunc:8-loop$unknown:57|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |queen$unknown:68|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |make_array$unknown:64|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (= (+ (* (- 1) v_0) v_2) 0)
+  )
+  (define-fun |queen$unknown:67|
+    ( (v_0 Int) ) Bool
+    (>= v_0 1)
+  )
+  (define-fun |$innerFunc:6-aux2$unknown:38|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:2-assign$unknown:11|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:2-assign$unknown:15|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) ) Bool
+    (or (exists ( (v_5 Int) ) (and (>= (+ (* (- 1) v_5) v_4) 1) (|$innerFunc:8-loop$unknown:57| v_5 v_3 v_3 v_4) (|$innerFunc:8-loop$unknown:57| v_0 v_1 v_3 v_4) (|$innerFunc:8-loop$unknown:55| v_3 v_4))) (exists ( (v_5 Int) ) (and (>= (+ v_5 (* (- 1) v_4)) 1) (|$innerFunc:8-loop$unknown:57| v_0 v_1 v_3 v_4) (|$innerFunc:8-loop$unknown:57| (+ (- 1) v_5) v_3 v_3 v_4) (|$innerFunc:8-loop$unknown:55| v_3 v_4))))
+  )
+  (define-fun |$innerFunc:2-assign$unknown:17|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) ) Bool
+    (|update$unknown:75| v_0 v_1 v_2 v_4 v_3)
+  )
+  (define-fun |$innerFunc:7-test$unknown:51|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_4 Int) (v_3 Int) ) (and (>= (+ v_2 (* (- 1) v_3)) 1) (|$innerFunc:8-loop$unknown:57| v_3 v_1 v_1 v_2) (|$innerFunc:6-aux2$unknown:44| v_0 0 v_4 v_1 v_2) (|update$unknown:75| v_4 v_1 (+ v_3 1) v_2 v_1) (|$innerFunc:8-loop$unknown:55| v_1 v_2)))
+  )
+  (define-fun |$innerFunc:5-queenPrint$unknown:32|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:5-queenPrint$unknown:34|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_4 Int) (v_3 Int) ) (and (not (= v_3 0)) (>= (+ v_2 (* (- 1) v_4)) 1) (|$innerFunc:8-loop$unknown:57| v_4 (+ (- 1) v_2) (+ (- 1) v_2) v_2) (|$innerFunc:8-loop$unknown:55| (+ (- 1) v_2) v_2) (|update$unknown:75| v_0 v_1 (+ v_4 1) v_2 (+ (- 1) v_2)) (|$innerFunc:7-test$unknown:51| v_3 (+ (- 1) v_2) v_2)))
+  )
+  (define-fun |abs$unknown:60|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (and (>= v_1 0) (= (+ (* (- 1) v_1) v_0) 0)) (and (= (+ v_1 v_0) 0) (>= v_0 1)))
+  )
+  (define-fun |$innerFunc:8-loop$unknown:54|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:7-test$unknown:47|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:7-test$unknown:50|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (exists ( (v_4 Int) ) (and (>= (+ v_3 (* (- 1) v_4)) 1) (|update$unknown:75| v_0 v_1 (+ v_4 1) v_3 v_2) (|$innerFunc:8-loop$unknown:57| v_4 v_2 v_2 v_3) (|$innerFunc:8-loop$unknown:55| v_2 v_3)))
+  )
+  (define-fun |print_string$unknown:66|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:3-dotsPrint$unknown:20|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:6-aux2$unknown:41|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (exists ( (v_4 Int) ) (and (|$innerFunc:7-test$unknown:50| v_0 v_1 v_2 v_3) (|$innerFunc:7-test$unknown:50| v_4 v_2 v_2 v_3)))
+  )
+  (define-fun |$innerFunc:4-aux1$unknown:25|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:5-queenPrint$unknown:30|
+    ( (v_0 Int) ) Bool
+    (exists ( (v_1 Int) (v_2 Int) ) (and (>= (+ v_0 (* (- 1) v_2)) 0) (not (= v_1 0)) (|$innerFunc:8-loop$unknown:57| (+ (- 1) v_2) (+ (- 1) v_0) (+ (- 1) v_0) v_0) (|$innerFunc:7-test$unknown:51| v_1 (+ (- 1) v_0) v_0) (|$innerFunc:8-loop$unknown:55| (+ (- 1) v_0) v_0)))
+  )
+  (define-fun |$innerFunc:8-loop$unknown:58|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:1-a$unknown:4|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (exists ( (v_4 Int) ) (and (|$innerFunc:2-assign$unknown:15| v_0 v_1 0 v_3 v_2) (|$innerFunc:2-assign$unknown:15| v_4 v_3 0 v_3 v_2)))
+  )
+  (define-fun |$innerFunc:4-aux1$unknown:27|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (|$innerFunc:5-queenPrint$unknown:30| v_2) (|$innerFunc:5-queenPrint$unknown:34| v_0 v_1 v_2))
+  )
+  (define-fun |$innerFunc:5-queenPrint$unknown:35|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (|$innerFunc:5-queenPrint$unknown:30| v_1) (|$innerFunc:4-aux1$unknown:29| 0 0 v_1))
+  )
+  (define-fun |update$unknown:72|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (|$innerFunc:2-assign$unknown:15| v_0 v_1 0 v_3 v_2)
+  )
+  (define-fun |$innerFunc:1-a$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) ) Bool
+    (or (|update$unknown:75| v_0 v_1 v_3 v_4 v_5) (not (|$innerFunc:2-assign$unknown:15| v_2 v_5 0 v_5 v_4)))
+  )
+)

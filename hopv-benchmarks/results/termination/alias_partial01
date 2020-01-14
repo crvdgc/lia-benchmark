@@ -1,0 +1,39 @@
+sat
+(model
+  (define-fun |lambda_1031$unknown:22|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |bot$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |f_1030$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (= v_2 0)
+  )
+  (define-fun |fail$unknown:18|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |f_without_checking_1098$unknown:16|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) Bool
+    true
+  )
+  (define-fun |f_1030$unknown:9|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) Bool
+    true
+  )
+  (define-fun |fail$unknown:17|
+    ( (v_0 Int) ) Bool
+    false
+  )
+  (define-fun |main_1035$unknown:25|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |main_1035$unknown:26|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+)

@@ -1,0 +1,452 @@
+; Running top pre-processing
+; running simplify
+;   simplifying clause #2 (terms_changed: true)
+;     propagation...
+;       (= v_3 0)
+;       v_3 -> 0
+;       (= (not (= v_1 0)) (>= (* (- 1) v_0) (- 101)))
+;       (= (not (= v_3 0)) (= (+ v_2 (- 91)) 0))
+;     pruning...
+;     trivial?
+;     redundancy check...
+;     split disj...
+;     done
+;   simplifying clause #1 (terms_changed: true)
+;     propagation...
+;       (= (+ (* (- 1) v_1) v_0 10) 0)
+;       v_1 -> (+ v_0 10)
+;       (= (not (= v_2 0)) (>= v_1 101))
+;     pruning...
+;     trivial?
+;     redundancy check...
+;     split disj...
+;     done
+;   simplifying clause #0 (terms_changed: true)
+;     propagation...
+;       (= v_2 0)
+;       v_2 -> 0
+;       (= (+ v_0 (* (- 1) v_5)) 0)
+;       v_0 -> v_5
+;       (= (not (= v_2 0)) (>= v_1 101))
+;       (= (+ v_3 (* (- 1) v_1) (- 11)) 0)
+;       v_3 -> (+ v_1 11)
+;     pruning...
+;     trivial?
+;     redundancy check...
+;     split disj...
+;     done
+;       checking side clauses
+; simplify: did nothing
+; running arg_reduce
+;     rm_args (1)
+;     to keep {
+;       |mc91$unknown:2|: v_0 v_1
+;     }
+;       - |mc91$unknown:2|
+;       skipping
+; arg_reduce: did nothing
+; running one_rhs
+; one_rhs: did nothing
+; running one_lhs
+; one_lhs: did nothing
+; running cfg_red
+;   breaking cycles in pred dep graph...
+;     no predicate illeligible for inlining
+; cfg_red: did nothing
+; running strict_neg
+;     working on clause #2
+;     rewriting clause
+;     rewriting successful
+;       terms_of_lhs_app on |mc91$unknown:2| v_2 v_0 (true)
+;     partial definitions cover all predicates
+;     success (1 term(s))
+;       (or (= (+ v_0 (- 91)) 0) (>= v_1 102)) (0 quantified variable(s))
+; strict_neg: prd: 1, cls rm: 0, cls add: 0, args rm: 0
+; Starting learning...
+;   starting the learning process
+;     launching solver kid...
+;   spawning ice learner(s)...
+;   performing initial check...
+;   initial candidates:
+;     |mc91$unknown:2|: (or (= (+ v_0 (- 91)) 0) (>= v_1 102))
+; looking for counterexamples in positive clauses (1)...
+;   working on clause #1
+;     checksat
+;     unsat
+; looking for counterexamples in strict negative clauses (1)...
+;   working on clause #2
+;     checksat
+;     unsat
+; looking for counterexamples in non-strict negative clauses (0)...
+; looking for counterexamples in implication clauses (1)...
+;   working on clause #0
+;     checksat
+;     sat, getting cex
+;     0 91 0 0 102 0
+;     generating bias actlits
+;       creating lhs actlits
+;       working on rhs
+;     working on 0 biased checks
+;   extracted 1 cexs
+;   generating data from initial cex...
+;       adding constraint
+;       (|mc91$unknown:2| 0 91)
+;       <= (|mc91$unknown:2| 0 102)
+;          (|mc91$unknown:2| 102 102)
+;     trying to break
+;     (|mc91$unknown:2| 102 102) (|mc91$unknown:2| 0 102) => false
+; all learning data:
+; pos (
+; ) neg (
+;   (|mc91$unknown:2| 0 91)
+; ) constraints (
+;   0 | (|mc91$unknown:2| 102 102) (|mc91$unknown:2| 0 102) => false
+; ) constraint map(
+;   (|mc91$unknown:2| 102 102) -> 0
+;   (|mc91$unknown:2| 0 102) -> 0
+; ) positive examples staged (
+; ) negative examples staged (
+; ) modded (
+; ) neg (
+;   #0
+; )
+; broadcasting...
+; done broadcasting...
+;
+; ice | starting learning
+; ice |   simple:      false,
+; ice |   sorted:      true,
+; ice |   skip_prelim: false,
+;
+; ice | legal_pred (1)
+;
+; ice | |mc91$unknown:2| only has negative (1) and unclassified (2) data
+; ice | legal check ok, assuming everything negative
+
+; Current candidate(s) from ice learner:
+; |mc91$unknown:2|:
+;   false
+; looking for counterexamples in positive clauses (1)...
+;   working on clause #1
+;     checksat
+;     sat, getting cex
+;     91 _ 1
+; looking for counterexamples in strict negative clauses (1)...
+; looking for counterexamples in non-strict negative clauses (0)...
+; looking for counterexamples in implication clauses (1)...
+;   extracted 1 cexs
+; all learning data:
+; pos (
+;   (|mc91$unknown:2| 91 101)
+; ) neg (
+;   (|mc91$unknown:2| 0 91)
+; ) constraints (
+;   0 | (|mc91$unknown:2| 102 102) (|mc91$unknown:2| 0 102) => false
+; ) constraint map(
+;   (|mc91$unknown:2| 102 102) -> 0
+;   (|mc91$unknown:2| 0 102) -> 0
+; ) positive examples staged (
+; ) negative examples staged (
+; ) modded (
+; ) neg (
+;   #0
+; )
+;
+; ice | starting learning
+; ice |   simple:      false,
+; ice |   sorted:      true,
+; ice |   skip_prelim: false,
+;
+; ice | |mc91$unknown:2|: 2 unclassified, 2 classified
+;
+; ice | working on predicate |mc91$unknown:2| (pos: 1, neg: 1, unc: 2)
+;
+; ice | data:
+; ice |   pos {
+; ice |     91 101
+; ice |   } neg {
+; ice |     0 91
+; ice |   } unc {
+; ice |     102 102
+; ice |     0 102
+; ice |   }
+;
+; ice |   using qualifier (= (+ (* (- 1) v_1) v_0 10) 0), gain: 1 >= 0.1 (simple: false)
+;
+; ice |   no more negative data, force_legal check ok
+; ice |   forcing 0 unclassified(s) positive...
+; ice |   data:
+; ice |     pos {
+; ice |       91 101
+; ice |     } neg {
+; ice |     } unc {
+; ice |     }
+;
+; ice |   no more positive data, force_legal check ok
+; ice |   forcing 2 unclassified(s) negative...
+; ice |   data:
+; ice |     pos {
+; ice |     } neg {
+; ice |       0 91
+; ice |     } unc {
+; ice |       102 102
+; ice |       0 102
+; ice |     }
+
+; Current candidate(s) from ice learner:
+; |mc91$unknown:2|:
+;   (and (or (= (+ v_0 (- 91)) 0) (>= v_1 102)) (= (+ (* (- 1) v_1) v_0 10) 0))
+; looking for counterexamples in positive clauses (1)...
+;   working on clause #1
+;     checksat
+;     unsat
+; looking for counterexamples in strict negative clauses (1)...
+;   working on clause #2
+;     checksat
+;     unsat
+; looking for counterexamples in non-strict negative clauses (0)...
+; looking for counterexamples in implication clauses (1)...
+;   working on clause #0
+;     checksat
+;     sat, getting cex
+;     0 100 0 0 101 91
+;     generating bias actlits
+;       creating lhs actlits
+;       working on rhs
+;       partial bias left
+;     working on 1 biased checks
+;     checksat with bias none
+;     sat, getting cex
+;     0 100 0 0 101 91
+;   extracted 1 cexs
+;       adding constraint
+;       (|mc91$unknown:2| 91 100)
+;       <= (|mc91$unknown:2| 91 101)
+;          (|mc91$unknown:2| 101 111)
+;     trying to break
+;     (|mc91$unknown:2| 101 111) => (|mc91$unknown:2| 91 100)
+;       discovered 1 positive samples
+;         |mc91$unknown:2| 101 111
+; all learning data:
+; pos (
+;   (|mc91$unknown:2| 91 101)
+;   (|mc91$unknown:2| 91 100)
+;   (|mc91$unknown:2| 101 111)
+; ) neg (
+;   (|mc91$unknown:2| 0 91)
+; ) constraints (
+;   0 | (|mc91$unknown:2| 102 102) (|mc91$unknown:2| 0 102) => false
+; ) constraint map(
+;   (|mc91$unknown:2| 102 102) -> 0
+;   (|mc91$unknown:2| 0 102) -> 0
+; ) positive examples staged (
+; ) negative examples staged (
+; ) modded (
+; ) neg (
+;   #0
+; )
+;
+; ice | starting learning
+; ice |   simple:      false,
+; ice |   sorted:      true,
+; ice |   skip_prelim: false,
+;
+; ice | |mc91$unknown:2|: 2 unclassified, 4 classified
+;
+; ice | working on predicate |mc91$unknown:2| (pos: 3, neg: 1, unc: 2)
+;
+; ice | data:
+; ice |   pos {
+; ice |     91 101
+; ice |     91 100
+; ice |     101 111
+; ice |   } neg {
+; ice |     0 91
+; ice |   } unc {
+; ice |     102 102
+; ice |     0 102
+; ice |   }
+;
+; ice |   using qualifier (>= v_0 91), gain: 1 >= 0.1 (simple: false)
+;
+; ice |   no more negative data, force_legal check ok
+; ice |   forcing 1 unclassified(s) positive...
+; ice |   data:
+; ice |     pos {
+; ice |       91 101
+; ice |       91 100
+; ice |       101 111
+; ice |     } neg {
+; ice |     } unc {
+; ice |       102 102
+; ice |     }
+;
+; ice |   no more positive data, force_legal check ok
+; ice |   forcing 0 unclassified(s) negative...
+; ice |   data:
+; ice |     pos {
+; ice |     } neg {
+; ice |       0 91
+; ice |       0 102
+; ice |     } unc {
+; ice |     }
+
+; Current candidate(s) from ice learner:
+; |mc91$unknown:2|:
+;   (and (>= v_0 91) (or (= (+ v_0 (- 91)) 0) (>= v_1 102)))
+; looking for counterexamples in positive clauses (1)...
+;   working on clause #1
+;     checksat
+;     unsat
+; looking for counterexamples in strict negative clauses (1)...
+;   working on clause #2
+;     checksat
+;     unsat
+; looking for counterexamples in non-strict negative clauses (0)...
+; looking for counterexamples in implication clauses (1)...
+;   working on clause #0
+;     checksat
+;     sat, getting cex
+;     0 91 0 0 102 92
+;     generating bias actlits
+;       creating lhs actlits
+;       working on rhs
+;       partial bias left
+;     working on 1 biased checks
+;     checksat with bias none
+;     sat, getting cex
+;     0 92 0 0 111 101
+;   extracted 2 cexs
+;       adding constraint
+;       (|mc91$unknown:2| 101 92)
+;       <= (|mc91$unknown:2| 101 111)
+;          (|mc91$unknown:2| 111 103)
+;       adding constraint
+;       (|mc91$unknown:2| 92 91)
+;       <= (|mc91$unknown:2| 92 102)
+;          (|mc91$unknown:2| 102 102)
+;     trying to break
+;     (|mc91$unknown:2| 102 102) (|mc91$unknown:2| 92 102) => false
+;       discovered 1 positive samples
+;         |mc91$unknown:2| 92 102
+; all learning data:
+; pos (
+;   (|mc91$unknown:2| 91 101)
+;   (|mc91$unknown:2| 91 100)
+;   (|mc91$unknown:2| 101 111)
+;   (|mc91$unknown:2| 92 102)
+; ) neg (
+;   (|mc91$unknown:2| 0 91)
+;   (|mc91$unknown:2| 102 102)
+;   (|mc91$unknown:2| 101 92)
+;   (|mc91$unknown:2| 111 103)
+;   (|mc91$unknown:2| 92 91)
+; ) constraints (
+; ) constraint map(
+; ) positive examples staged (
+; ) negative examples staged (
+; ) modded (
+; ) neg (
+; )
+;
+; ice | starting learning
+; ice |   simple:      false,
+; ice |   sorted:      true,
+; ice |   skip_prelim: false,
+;
+; ice | |mc91$unknown:2|: 0 unclassified, 9 classified
+;
+; ice | working on predicate |mc91$unknown:2| (pos: 4, neg: 5, unc: 0)
+;
+; ice | data:
+; ice |   pos {
+; ice |     91 101
+; ice |     91 100
+; ice |     101 111
+; ice |     92 102
+; ice |   } neg {
+; ice |     0 91
+; ice |     102 102
+; ice |     101 92
+; ice |     111 103
+; ice |     92 91
+; ice |   } unc {
+; ice |   }
+;
+; ice |   using qualifier (= (+ (* (- 1) v_1) v_0 10) 0), gain: 0.562749723598772 >= 0.1 (simple: true)
+;
+; ice | data:
+; ice |   pos {
+; ice |     91 100
+; ice |   } neg {
+; ice |     0 91
+; ice |     102 102
+; ice |     101 92
+; ice |     111 103
+; ice |     92 91
+; ice |   } unc {
+; ice |   }
+;
+; ice |   using qualifier (= (+ v_0 (- 91)) 0), gain: 1 >= 0.1 (simple: true)
+;
+; ice |   no more positive data, force_legal check ok
+; ice |   forcing 0 unclassified(s) negative...
+; ice |   data:
+; ice |     pos {
+; ice |     } neg {
+; ice |       0 91
+; ice |       102 102
+; ice |       101 92
+; ice |       111 103
+; ice |       92 91
+; ice |     } unc {
+; ice |     }
+;
+; ice |   no more negative data, force_legal check ok
+; ice |   forcing 0 unclassified(s) positive...
+; ice |   data:
+; ice |     pos {
+; ice |       91 101
+; ice |       101 111
+; ice |       92 102
+; ice |     } neg {
+; ice |     } unc {
+; ice |     }
+;
+; ice |   no more negative data, force_legal check ok
+; ice |   forcing 0 unclassified(s) positive...
+; ice |   data:
+; ice |     pos {
+; ice |       91 100
+; ice |     } neg {
+; ice |     } unc {
+; ice |     }
+
+; Current candidate(s) from ice learner:
+; |mc91$unknown:2|:
+;   (and (or (= (+ v_0 (- 91)) 0) (>= v_1 102)) (or (= (+ (* (- 1) v_1) v_0 10) 0) (and (= (+ v_0 (- 91)) 0) (not (= (+ (* (- 1) v_1) v_0 10) 0)))))
+; looking for counterexamples in positive clauses (1)...
+;   working on clause #1
+;     checksat
+;     unsat
+; looking for counterexamples in strict negative clauses (1)...
+;   working on clause #2
+;     checksat
+;     unsat
+; looking for counterexamples in non-strict negative clauses (0)...
+; looking for counterexamples in implication clauses (1)...
+;   working on clause #0
+;     checksat
+;     unsat
+;   extracted 0 cexs
+;   draining messages
+;   all learners are dead
+; sat
+
+sat
+(model
+  (define-fun |mc91$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (or (= (+ v_0 (- 91)) 0) (>= v_1 102)) (or (= (+ (* (- 1) v_1) v_0 10) 0) (and (= (+ v_0 (- 91)) 0) (not (= (+ (* (- 1) v_1) v_0 10) 0)))))
+  )
+)

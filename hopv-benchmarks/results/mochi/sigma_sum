@@ -1,0 +1,15 @@
+sat
+(model
+  (define-fun |sigma$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (>= (+ v_0 (* (- 1) v_1)) 0)
+  )
+  (define-fun |sum$unknown:6|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (and (>= v_0 0) (= (+ (* (- 1) v_0) v_1) 0)) (and (>= v_1 1) (not (= (+ (* (- 1) v_0) v_1) 0)) (>= v_0 1)) (and (>= (* (- 1) v_1) 0) (>= v_0 0) (not (= (+ (* (- 1) v_0) v_1) 0))))
+  )
+  (define-fun |sigma$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (|sum$unknown:6| v_0 v_1)
+  )
+)

@@ -1,0 +1,7 @@
+sat
+(model
+  (define-fun |f$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (not (= (+ 3 (* (- 1) v_1)) 0)) (>= v_0 0))
+  )
+)

@@ -1,0 +1,51 @@
+sat
+(model
+  (define-fun |make_array$unknown:9|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= v_1 1) (>= (+ v_1 (* (- 1) v_0)) 1) (>= v_0 0))
+  )
+  (define-fun |bcopy_aux$unknown:6|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (>= v_0 0)
+  )
+  (define-fun |make_array$unknown:10|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (= v_0 0) (>= (+ v_2 (* (- 1) v_1)) 1) (>= v_1 0) (|make_array$unknown:9| v_1 v_2))
+  )
+  (define-fun |bcopy_aux$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= (+ v_1 (* (- 1) v_0)) 1) (|bcopy_aux$unknown:6| v_0 v_1))
+  )
+  (define-fun |bcopy_aux$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_3 Int) ) (and (>= (+ v_2 (* (- 1) v_1)) 1) (>= v_1 0) (>= v_2 1) (>= (+ (* (- 1) v_2) v_3) 0) (|make_array$unknown:9| v_1 v_2) (|bcopy_aux$unknown:6| v_1 v_2)))
+  )
+  (define-fun |update$unknown:15|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= (+ v_1 (* (- 1) v_2)) 1) (|bcopy_aux$unknown:6| v_2 v_1) (|bcopy_aux$unknown:3| 0 v_2 v_1))
+  )
+  (define-fun |bcopy_aux$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= (+ v_1 (* (- 1) v_0)) 1) (|bcopy_aux$unknown:6| v_0 v_1) (|bcopy_aux$unknown:3| 0 v_0 v_1))
+  )
+  (define-fun |bcopy_aux$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_3 Int) ) (and (>= v_1 0) (>= v_2 1) (>= (+ (* (- 1) v_2) v_3) 0) (>= (+ v_3 (* (- 1) v_1)) 1) (|make_array$unknown:9| v_1 v_3) (|bcopy_aux$unknown:4| v_1 v_2)))
+  )
+  (define-fun |update$unknown:13|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (= (+ v_2 (* (- 1) v_0)) 0) (>= (+ v_1 (* (- 1) v_2)) 1) (|bcopy_aux$unknown:6| v_2 v_1) (|bcopy_aux$unknown:3| 0 v_2 v_1))
+  )
+  (define-fun |update$unknown:14|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (and (>= (+ v_2 (* (- 1) v_3)) 1) (|bcopy_aux$unknown:6| v_3 v_2) (|bcopy_aux$unknown:3| 0 v_3 v_2) (|update$unknown:13| v_1 v_2 v_3) (|bcopy_aux$unknown:5| 0 v_1 v_2))
+  )
+  (define-fun |bcopy_aux$unknown:7|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |update$unknown:16|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (and (>= (+ v_2 (* (- 1) v_3)) 1) (|update$unknown:14| 0 v_3 v_2 v_3) (|bcopy_aux$unknown:6| v_3 v_2) (|bcopy_aux$unknown:3| 0 v_3 v_2))
+  )
+)

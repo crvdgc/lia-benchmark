@@ -1,0 +1,51 @@
+sat
+(model
+  (define-fun |main_1035$unknown:33|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |bot$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |main_1035$unknown:32|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |f_1030$unknown:9|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) Bool
+    true
+  )
+  (define-fun |fail$unknown:25|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |lambda_1031$unknown:29|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |f_without_checking_1098$unknown:19|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |fail$unknown:24|
+    ( (v_0 Int) ) Bool
+    false
+  )
+  (define-fun |f_1030$unknown:12|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_4 Int) (v_3 Int) ) (and (= (+ v_2 (- 1)) 0) (>= v_0 0) (= (+ (- 1) (* (- 1) v_0) v_1) 0) (|f_without_checking_1098$unknown:19| (+ 1 v_0) v_3 v_4)))
+  )
+  (define-fun |f_without_checking_1098$unknown:23|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) Bool
+    (or (exists ( (v_8 Int) (v_7 Int) ) (and (>= v_4 1) (|f_without_checking_1098$unknown:19| v_4 v_7 v_8) (|f_without_checking_1098$unknown:19| v_4 v_5 v_6) (|f_1030$unknown:9| 0 0 0 0 (+ (- 1) v_4) v_4 1))) (and (>= (* (- 1) v_4) 0) (|f_without_checking_1098$unknown:19| v_4 v_5 v_6)))
+  )
+  (define-fun |f_1030$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_4 Int) (v_3 Int) ) (and (>= v_0 0) (not (= v_2 0)) (= (+ v_2 (- 1)) 0) (>= (+ (* (- 1) v_0) v_1) 1) (= (+ (- 1) (* (- 1) v_0) v_1) 0) (|f_without_checking_1098$unknown:19| (+ 1 v_0) v_4 v_3)))
+  )
+  (define-fun |f_1030$unknown:16|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) Bool
+    (exists ( (v_8 Int) (v_7 Int) ) (and (= (+ (- 1) v_6) 0) (not (= v_6 0)) (>= (+ v_5 (* (- 1) v_4)) 1) (= (+ (- 1) v_5 (* (- 1) v_4)) 0) (>= v_4 0) (|f_without_checking_1098$unknown:19| (+ 1 v_4) v_8 v_7) (|f_1030$unknown:9| 0 0 0 0 v_4 v_5 v_6)))
+  )
+)

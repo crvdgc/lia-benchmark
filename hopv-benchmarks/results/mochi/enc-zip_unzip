@@ -1,0 +1,43 @@
+sat
+(model
+  (define-fun |zip$unknown:13|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (or (= v_1 0) (not (= v_0 0))) (or (not (= v_1 0)) (= v_0 0)) (= (+ v_0 (* (- 1) v_1)) 0))
+  )
+  (define-fun |unzip$unknown:9|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (= (+ v_0 (* (- 1) v_1)) 0)
+  )
+  (define-fun |zip$unknown:14|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |unzip$unknown:7|
+    ( (v_0 Int) ) Bool
+    true
+  )
+  (define-fun |unzip$unknown:11|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |f$unknown:5|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (exists ( (v_2 Int) ) (and (not (= v_2 0)) (|unzip$unknown:9| v_0 v_1 (+ (- 1) v_2))))
+  )
+  (define-fun |f$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |f$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (|f$unknown:5| (+ v_0 (- 1)) (+ v_1 (- 1)))
+  )
+  (define-fun |f$unknown:6|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (|f$unknown:5| v_1 v_2) (|f$unknown:3| 0 (+ v_1 1) (+ v_2 1)))
+  )
+  (define-fun |unzip$unknown:10|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (or (= v_3 0) (|f$unknown:3| 0 v_1 v_2) (not (|f$unknown:5| (+ v_1 (- 1)) (+ (- 1) v_2))))
+  )
+)

@@ -1,0 +1,19 @@
+sat
+(model
+  (define-fun |twice$unknown:7|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_3 Int) ) (and (= (+ v_1 v_0) 0) (= (+ v_2 (* (- 2) v_3)) 0)))
+  )
+  (define-fun |g$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ v_0 (* (- 2) v_1)) 0)
+  )
+  (define-fun |neg$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ v_1 v_0) 0)
+  )
+  (define-fun |twice$unknown:8|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (exists ( (v_2 Int) ) (and (|twice$unknown:7| v_0 v_2 v_1) (|twice$unknown:7| v_2 v_1 v_1)))
+  )
+)

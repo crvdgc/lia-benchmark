@@ -1,0 +1,47 @@
+sat
+(model
+  (define-fun |ack_without_checking_1087$unknown:27|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) (v_8 Int) ) Bool
+    (>= v_0 0)
+  )
+  (define-fun |ack_without_checking_1087$unknown:26|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) Bool
+    (and (>= v_0 0) (or (= v_4 0) (= v_0 0) (>= v_0 1)))
+  )
+  (define-fun |main_1033$unknown:38|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) Bool
+    true
+  )
+  (define-fun |ack_1030$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) Bool
+    (exists ( (v_8 Int) (v_9 Int) (v_10 Int) (v_11 Int) (v_12 Int) (v_13 Int) ) (and (= (+ (- 1) v_3) 0) (>= v_5 1) (not (= v_5 0)) (= (+ v_4 (* (- 1) v_2)) 0) (= (+ v_5 (* (- 1) v_1)) 0) (= (+ v_6 (* (- 1) v_4)) 0) (= (+ v_7 (- 1)) 0) (not (= v_6 0)) (= (+ 1 v_0 (* (- 1) v_5)) 0) (|ack_without_checking_1087$unknown:26| v_5 v_8 v_9 v_10 v_6 v_11 v_12 v_13)))
+  )
+  (define-fun |ack_1030$unknown:9|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) (v_8 Int) ) Bool
+    (exists ( (v_16 Int) (v_9 Int) (v_10 Int) (v_11 Int) (v_12 Int) (v_13 Int) (v_14 Int) (v_15 Int) ) (and (not (= (+ 1 v_9) 0)) (not (= v_13 0)) (|ack_without_checking_1087$unknown:27| v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8) (|ack_1030$unknown:8| v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8) (|ack_without_checking_1087$unknown:26| (+ 1 v_9) v_10 v_11 v_12 v_13 v_14 v_15 v_16)))
+  )
+  (define-fun |ack_1030$unknown:17|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) Bool
+    (exists ( (v_8 Int) (v_9 Int) (v_10 Int) (v_11 Int) (v_12 Int) (v_13 Int) ) (and (= (+ (- 1) v_3) 0) (not (= v_5 0)) (= (+ v_4 (* (- 1) v_2)) 0) (= (+ v_5 (* (- 1) v_1)) 0) (= (+ v_6 (* (- 1) v_4)) 0) (= (+ v_7 (- 1)) 0) (not (= v_6 0)) (= (+ 1 v_0 (* (- 1) v_5)) 0) (|ack_without_checking_1087$unknown:26| v_5 v_8 v_9 v_10 v_6 v_11 v_12 v_13)))
+  )
+  (define-fun |bot$unknown:29|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |fail$unknown:31|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |ack_1030$unknown:18|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) (v_8 Int) ) Bool
+    (exists ( (v_9 Int) (v_10 Int) (v_11 Int) (v_12 Int) (v_13 Int) (v_14 Int) (v_15 Int) (v_16 Int) (v_17 Int) (v_18 Int) (v_19 Int) (v_20 Int) (v_21 Int) (v_22 Int) (v_23 Int) (v_24 Int) (v_25 Int) (v_26 Int) (v_27 Int) (v_28 Int) ) (and (= (+ 1 v_1 (* (- 1) v_6)) 0) (= (+ v_2 (* (- 1) v_6)) 0) (= (+ (- 1) v_8) 0) (>= v_6 1) (not (= (+ 1 v_15) 0)) (not (= v_19 0)) (= (+ (- 1) v_4) 0) (not (= v_7 0)) (not (= v_6 0)) (= (+ v_3 (* (- 1) v_5)) 0) (= (+ (* (- 1) v_7) v_5) 0) (|ack_without_checking_1087$unknown:27| v_0 (+ (- 1) v_6) v_6 v_7 1 v_7 v_6 v_7 1) (|ack_without_checking_1087$unknown:26| v_6 v_9 v_10 v_11 v_7 v_12 v_13 v_14) (|ack_without_checking_1087$unknown:26| (+ 1 v_15) v_16 v_17 v_18 v_19 v_20 v_21 v_22) (|ack_without_checking_1087$unknown:26| v_6 v_23 v_24 v_25 v_7 v_26 v_27 v_28)))
+  )
+  (define-fun |fail$unknown:30|
+    ( (v_0 Int) ) Bool
+    false
+  )
+  (define-fun |main_1033$unknown:37|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) ) Bool
+    (and (= v_5 0) (= v_3 0) (= v_4 0))
+  )
+)

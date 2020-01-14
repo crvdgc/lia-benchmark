@@ -1,0 +1,51 @@
+sat
+(model
+  (define-fun |update$unknown:16|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |update$unknown:15|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    false
+  )
+  (define-fun |bcopy_aux$unknown:7|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |bcopy_aux$unknown:6|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (forall ( (v_2 Int) ) (or (>= (+ (* (- 1) v_1) v_0) 0) (>= (+ v_1 (* (- 1) v_2)) 1) (>= v_0 0)))
+  )
+  (define-fun |bcopy_aux$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |bcopy_aux$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |update$unknown:11|
+    ( (v_0 Int) ) Bool
+    false
+  )
+  (define-fun |update$unknown:12|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |bcopy_aux$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= (+ v_1 (* (- 1) v_0)) 1) (|bcopy_aux$unknown:6| v_0 v_1))
+  )
+  (define-fun |make_array$unknown:9|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (exists ( (v_2 Int) ) (and (>= (+ v_1 (* (- 1) v_0)) 1) (>= (+ v_2 (* (- 1) v_1)) 0) (|bcopy_aux$unknown:6| v_0 v_1)))
+  )
+  (define-fun |make_array$unknown:10|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= (+ v_2 (* (- 1) v_1)) 1) (>= v_1 0) (|make_array$unknown:9| v_1 v_2))
+  )
+  (define-fun |bcopy_aux$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (or (>= (+ v_1 (* (- 1) v_2)) 0) (|bcopy_aux$unknown:6| (+ v_1 1) v_2) (not (|bcopy_aux$unknown:6| v_1 v_2)))
+  )
+)

@@ -1,0 +1,71 @@
+sat
+(model
+  (define-fun |bcopy_aux$unknown:14|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (>= v_0 0)
+  )
+  (define-fun |update$unknown:21|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= v_0 0) (>= (+ v_1 (* (- 1) v_0)) 1))
+  )
+  (define-fun |make_array$unknown:17|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= v_0 0) (>= (+ v_1 (* (- 1) v_0)) 1))
+  )
+  (define-fun |bcopy_aux$unknown:15|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |bcopy_aux$unknown:13|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (forall ( (v_8 Int) (v_9 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) (or (>= (+ v_2 (* (- 1) v_8)) 1) (>= (* (- 1) v_4) 1) (>= (+ v_1 (* (- 1) v_2)) 0) (>= (* (- 1) v_1) 1) (>= (+ (* (- 1) v_7) v_2) 1) (>= (+ v_2 (* (- 1) v_9)) 1) (= (+ (* (- 1) v_1) v_3) 0) (>= (+ (* (- 1) v_5) v_2) 1) (>= (+ v_2 (* (- 1) v_6)) 1) (>= (+ v_4 (* (- 1) v_2)) 0) (|update$unknown:21| v_3 v_2 v_1) (not (|bcopy_aux$unknown:14| v_4 v_2)) (not (|bcopy_aux$unknown:14| v_1 v_2)) (not (|update$unknown:21| v_3 v_2 v_4)) (not (|update$unknown:21| v_1 v_2 v_1)) (not (|make_array$unknown:17| v_4 v_2)) (not (|make_array$unknown:17| v_1 v_2))))
+  )
+  (define-fun |make_array$unknown:18|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= (+ (* (- 1) v_1) v_2) 1) (= v_0 0) (>= v_1 0) (|make_array$unknown:17| v_1 v_2))
+  )
+  (define-fun |bcopy_aux$unknown:11|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_3 Int) ) (and (>= (+ (* (- 1) v_1) v_2) 1) (>= (+ v_3 (* (- 1) v_2)) 0) (>= v_1 0) (|bcopy_aux$unknown:14| v_1 v_2) (|make_array$unknown:17| v_1 v_2)))
+  )
+  (define-fun |$innerFunc:1-a$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) (and (>= (+ v_5 (* (- 1) v_1)) 0) (>= (+ v_1 (* (- 1) v_3)) 1) (>= v_3 0) (>= (+ v_6 (* (- 1) v_1)) 0) (>= (+ v_1 (* (- 1) v_2)) 1) (not (= (+ (* (- 1) v_0) v_2) 0)) (>= (+ (* (- 1) v_1) v_4) 0) (>= v_2 0) (|bcopy_aux$unknown:13| 0 v_2 v_1) (|update$unknown:21| v_0 v_1 v_3) (|update$unknown:21| v_2 v_1 v_2) (|bcopy_aux$unknown:14| v_2 v_1) (|bcopy_aux$unknown:14| v_3 v_1) (|make_array$unknown:17| v_2 v_1) (|make_array$unknown:17| v_3 v_1)))
+  )
+  (define-fun |update$unknown:22|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (exists ( (v_4 Int) ) (and (>= (+ v_2 (* (- 1) v_3)) 1) (>= v_3 0) (>= (+ v_4 (* (- 1) v_2)) 0) (|bcopy_aux$unknown:13| 0 v_1 v_2) (|update$unknown:21| v_1 v_2 v_3) (|bcopy_aux$unknown:14| v_3 v_2) (|make_array$unknown:17| v_3 v_2)))
+  )
+  (define-fun |update$unknown:23|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= (+ v_1 (* (- 1) v_2)) 1) (|bcopy_aux$unknown:14| v_2 v_1) (|bcopy_aux$unknown:11| 0 v_2 v_1))
+  )
+  (define-fun |bcopy_aux$unknown:10|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= (+ v_1 (* (- 1) v_0)) 1) (|bcopy_aux$unknown:14| v_0 v_1))
+  )
+  (define-fun |$innerFunc:1-a$unknown:4|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (exists ( (v_8 Int) (v_9 Int) (v_10 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) (and (>= (+ v_2 (* (- 1) v_4)) 1) (>= v_4 0) (>= (+ v_5 (* (- 1) v_2)) 0) (>= (+ (* (- 1) v_2) v_10) 0) (>= (+ v_6 (* (- 1) v_2)) 0) (>= (+ v_7 (* (- 1) v_2)) 0) (not (= (+ (* (- 1) v_1) v_3) 0)) (>= v_3 0) (>= (+ (* (- 1) v_2) v_8) 0) (>= (+ v_2 (* (- 1) v_3)) 1) (>= (+ (* (- 1) v_2) v_9) 0) (|bcopy_aux$unknown:13| 0 v_1 v_2) (|bcopy_aux$unknown:13| 0 v_3 v_2) (|update$unknown:21| v_3 v_2 v_3) (|update$unknown:21| v_1 v_2 v_3) (|update$unknown:21| v_1 v_2 v_4) (|bcopy_aux$unknown:14| v_4 v_2) (|bcopy_aux$unknown:14| v_3 v_2) (|make_array$unknown:17| v_4 v_2) (|make_array$unknown:17| v_3 v_2)))
+  )
+  (define-fun |bcopy_aux$unknown:12|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (exists ( (v_2 Int) ) (and (>= (+ v_1 (* (- 1) v_2)) 1) (|bcopy_aux$unknown:14| v_2 v_1) (|bcopy_aux$unknown:11| 0 v_2 v_1) (|update$unknown:21| v_0 v_1 v_2)))
+  )
+  (define-fun |update$unknown:24|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (and (>= (+ v_2 (* (- 1) v_3)) 1) (|bcopy_aux$unknown:14| v_3 v_2) (|bcopy_aux$unknown:11| 0 v_3 v_2) (|bcopy_aux$unknown:12| v_0 v_2))
+  )
+  (define-fun |$innerFunc:1-a$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) ) Bool
+    (or (>= (+ v_5 (* (- 1) v_4)) 0) (|bcopy_aux$unknown:13| 0 v_1 v_4) (not (|bcopy_aux$unknown:12| v_1 v_4)) (not (|update$unknown:22| 0 v_5 v_4 v_5)) (not (|bcopy_aux$unknown:14| v_5 v_4)) (not (|bcopy_aux$unknown:11| 0 v_5 v_4)))
+  )
+  (define-fun |update$unknown:25|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) ) Bool
+    (or (>= (+ v_4 (* (- 1) v_3)) 0) (|bcopy_aux$unknown:13| 0 v_1 v_3) (not (|bcopy_aux$unknown:14| v_4 v_3)) (not (|bcopy_aux$unknown:11| 0 v_4 v_3)) (not (|bcopy_aux$unknown:12| v_1 v_3)))
+  )
+  (define-fun |$innerFunc:1-a$unknown:7|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) ) Bool
+    (and (>= (+ v_3 (* (- 1) v_4)) 1) (|bcopy_aux$unknown:12| v_0 v_3) (|update$unknown:22| 0 v_4 v_3 v_4) (|bcopy_aux$unknown:14| v_4 v_3) (|bcopy_aux$unknown:11| 0 v_4 v_3))
+  )
+)

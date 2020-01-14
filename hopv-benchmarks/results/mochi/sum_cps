@@ -1,0 +1,43 @@
+sat
+(model
+  (define-fun |cps_sum$unknown:12|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |cps_sum$unknown:9|
+    ( (v_0 Int) ) Bool
+    true
+  )
+  (define-fun |cps_sum$unknown:10|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (>= (+ v_0 (* (- 1) v_1)) 0)
+  )
+  (define-fun |$innerFunc:2-f$unknown:7|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (|cps_sum$unknown:10| v_0 v_1)
+  )
+  (define-fun |$innerFunc:2-f$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= (+ v_1 (* (- 1) v_2)) 0) (|$innerFunc:2-f$unknown:7| v_1 v_2))
+  )
+  (define-fun |$innerFunc:1-f$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= v_1 1) (|cps_sum$unknown:10| v_0 (+ v_1 (- 1))))
+  )
+  (define-fun |cps_sum$unknown:11|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:1-f$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (>= (* (- 1) v_1) 0) (|cps_sum$unknown:10| v_0 v_1))
+  )
+  (define-fun |$innerFunc:1-f$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= v_2 1) (|cps_sum$unknown:11| 0 v_1 v_2) (|$innerFunc:1-f$unknown:2| v_1 v_2))
+  )
+  (define-fun |$innerFunc:1-f$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (|$innerFunc:1-f$unknown:4| v_1 v_2) (|$innerFunc:1-f$unknown:3| 0 (+ v_1 v_2) v_2))
+  )
+)

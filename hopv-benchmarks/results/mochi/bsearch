@@ -1,0 +1,43 @@
+sat
+(model
+  (define-fun |bs_aux$unknown:6|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (and (= (+ (- 1) (* (- 1) v_0) v_2) 0) (>= v_3 0) (>= v_1 0))
+  )
+  (define-fun |update$unknown:19|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |make_array$unknown:12|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ v_0 (* (- 1) v_1)) 0)
+  )
+  (define-fun |arraysize$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ v_0 (* (- 1) v_1)) 0)
+  )
+  (define-fun |bs_aux$unknown:7|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) ) Bool
+    true
+  )
+  (define-fun |bsearch$unknown:9|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (|bs_aux$unknown:6| (+ v_0 (- 1)) 0 v_0 v_1)
+  )
+  (define-fun |bsearch$unknown:10|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |update$unknown:18|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    false
+  )
+  (define-fun |sub$unknown:14|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (exists ( (v_4 Int) (v_2 Int) (v_3 Int) ) (and (= (+ v_0 v_3 (* (- 1) v_2) (* (- 1) (div v_3 2))) 0) (>= v_3 0) (|bs_aux$unknown:6| v_2 (+ (* (- 1) v_3) v_2) v_1 v_4)))
+  )
+  (define-fun |sub$unknown:15|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (= v_0 0) (>= (+ (* (- 1) v_1) v_2) 1) (>= v_1 0) (|sub$unknown:14| v_1 v_2))
+  )
+)

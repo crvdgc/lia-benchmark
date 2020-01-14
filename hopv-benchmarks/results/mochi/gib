@@ -1,0 +1,7 @@
+sat
+(model
+  (define-fun |gib$unknown:4|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (or (not (= v_3 0)) (>= v_0 0) (not (= (+ (- 1) v_2) 0)))
+  )
+)

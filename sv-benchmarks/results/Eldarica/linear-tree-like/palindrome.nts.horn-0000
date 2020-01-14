@@ -1,0 +1,8 @@
+(error "
+  illegal use of keyword `forall` at [10:254]:
+     |
+  10 | (assert (forall ((var0 Int)) (forall ((var1 Int)) (forall ((var2 Int)) (forall ((var3 Int)) (forall ((var4 Int)) (forall ((var5 Int)) (not (and (and (and (<= 0 (+ (* (- 1) var4 ) var3 ) ) (<= 0 var4 ) ) (predr4_1 var5 var4 var3 var2 var1 var0 ) ) (not (forall ((var6 Int)) (not (and (and (<= 0 (+ (+ (* (- 2) var6 ) (* (- 1) var4 ) ) var3 ) ) (<= 0 (+ (+ (+ (* 2 var6 ) var4 ) (* (- 1) var3 ) ) 1 ) ) ) (<= 0 (+ (+ (* (- 1) var6 ) var2 ) (* (- 3) 1 ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) )
+     |                                                                                                                                                                                                                                                              ^
+  while trying to parse datatype
+")
+sat

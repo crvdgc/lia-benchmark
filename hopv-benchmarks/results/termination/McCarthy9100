@@ -1,0 +1,27 @@
+sat
+(model
+  (define-fun |fail$unknown:3|
+    ( (v_0 Int) ) Bool
+    false
+  )
+  (define-fun |bot$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |fail$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |mc91_1030$unknown:7|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (= v_2 0)
+  )
+  (define-fun |mc91_without_checking_1058$unknown:12|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |mc91_1030$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+)

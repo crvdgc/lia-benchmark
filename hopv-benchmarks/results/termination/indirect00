@@ -1,0 +1,51 @@
+sat
+(model
+  (define-fun |f_1036$unknown:19|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (= v_1 0)
+  )
+  (define-fun |fail$unknown:21|
+    ( (v_0 Int) ) Bool
+    false
+  )
+  (define-fun |app_1032$unknown:12|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) Bool
+    (and (= (+ v_4 (* (- 1) v_3)) 0) (= (+ v_6 (* (- 1) v_4)) 0) (= v_5 0) (>= v_2 0) (|f_1036$unknown:19| 0 v_1 (+ v_2 1) 0))
+  )
+  (define-fun |id_without_checking_1118$unknown:28|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |id_1030$unknown:24|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (exists ( (v_2 Int) ) (and (>= (* (- 1) v_2) 0) (|f_1036$unknown:19| 0 v_1 v_2 0)))
+  )
+  (define-fun |app_1032$unknown:7|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) Bool
+    (or (not (= (+ v_6 (* (- 1) v_4)) 0)) (not (= v_5 0)) (|f_1036$unknown:19| 0 v_1 v_2 0))
+  )
+  (define-fun |f_1036$unknown:20|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) ) Bool
+    true
+  )
+  (define-fun |bot$unknown:15|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |fail$unknown:22|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |app_1032$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) Bool
+    (and (= (+ v_7 (* (- 1) v_5)) 0) (= v_6 0) (|app_1032$unknown:7| v_1 v_2 v_3 v_4 v_7 0 v_7) (|f_1036$unknown:20| 0 v_1 v_2 v_3 v_4))
+  )
+  (define-fun |app_1032$unknown:13|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) Bool
+    (and (|app_1032$unknown:8| 0 v_1 v_2 v_3 v_2 v_5 v_6 v_7) (|app_1032$unknown:12| v_1 v_2 v_3 v_4 v_5 v_6 v_7))
+  )
+  (define-fun |id_1030$unknown:25|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (= v_2 0) (|id_1030$unknown:24| 0 0))
+  )
+)

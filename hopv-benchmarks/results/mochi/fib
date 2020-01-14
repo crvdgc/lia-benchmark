@@ -1,0 +1,7 @@
+sat
+(model
+  (define-fun |fib$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= v_0 1) (>= (+ (* (- 1) v_1) v_0) 0))
+  )
+)

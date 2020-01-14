@@ -1,0 +1,15 @@
+sat
+(model
+  (define-fun |f$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (or (and (= (+ v_0 (* (- 1) v_2)) 0) (>= (+ v_2 (* (- 1) v_1)) 0)) (and (>= (+ v_1 (* (- 1) v_2)) 1) (= (+ v_0 (* (- 1) v_1)) 0)))
+  )
+  (define-fun |max$unknown:6|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_3 Int) ) (|f$unknown:3| v_0 v_3 v_2))
+  )
+  (define-fun |max$unknown:10|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (exists ( (v_4 Int) ) (and (|max$unknown:6| v_0 0 v_4) (|max$unknown:6| v_4 0 v_3)))
+  )
+)

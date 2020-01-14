@@ -1,0 +1,43 @@
+sat
+(model
+  (define-fun |m$unknown:11|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |m$unknown:12|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |m$unknown:10|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (or (>= v_1 102) (= (+ v_0 (- 91)) 0)) (or (= (+ v_1 (* (- 1) v_0) (- 10)) 0) (and (= (+ v_0 (- 91)) 0) (not (= (+ v_1 (* (- 1) v_0) (- 10)) 0)))))
+  )
+  (define-fun |$innerFunc:2-k$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (or (|m$unknown:11| 0 v_1 v_2) (not (|m$unknown:10| v_1 v_2)))
+  )
+  (define-fun |m$unknown:9|
+    ( (v_0 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:2-k$unknown:7|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (|m$unknown:10| v_0 v_1)
+  )
+  (define-fun |$innerFunc:1-f$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (exists ( (v_2 Int) ) (and (>= (* (- 1) v_1) (- 100)) (|m$unknown:10| v_0 v_2) (|m$unknown:10| v_2 (+ v_1 11))))
+  )
+  (define-fun |$innerFunc:1-f$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (>= (* (- 1) v_1) (- 100)) (|m$unknown:10| v_0 (+ v_1 11)))
+  )
+  (define-fun |$innerFunc:1-f$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= (* (- 1) v_2) (- 100)) (|m$unknown:11| 0 v_1 v_2) (|$innerFunc:1-f$unknown:2| v_1 v_2))
+  )
+  (define-fun |$innerFunc:1-f$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (|$innerFunc:1-f$unknown:4| v_1 v_2) (|m$unknown:12| 0 v_1))
+  )
+)

@@ -1,0 +1,39 @@
+sat
+(model
+  (define-fun |fib_without_checking_1060$unknown:16|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |fib_without_checking_1060$unknown:15|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |fail$unknown:3|
+    ( (v_0 Int) ) Bool
+    false
+  )
+  (define-fun |bot$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |fail$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |fib_1030$unknown:11|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_4 Int) (v_3 Int) ) (and (>= v_1 2) (= (+ 1 v_0 (* (- 1) v_1)) 0) (= (+ v_2 (- 1)) 0) (|fib_without_checking_1060$unknown:15| v_1 v_3 v_4)))
+  )
+  (define-fun |fib_1030$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (exists ( (v_8 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) (and (not (= v_3 0)) (>= v_4 2) (>= v_2 2) (>= (+ v_2 (* (- 1) v_1)) 1) (= (+ (* (- 1) v_2) 1 v_1) 0) (>= v_1 0) (= (+ (- 1) v_3) 0) (|fib_without_checking_1060$unknown:16| 0 v_1 v_2 v_3) (|fib_without_checking_1060$unknown:15| v_4 v_5 v_6) (|fib_without_checking_1060$unknown:15| v_2 v_7 v_8)))
+  )
+  (define-fun |fib_1030$unknown:12|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (exists ( (v_8 Int) (v_9 Int) (v_10 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) (and (>= v_7 2) (not (= v_3 0)) (>= v_2 2) (>= (+ v_2 (* (- 1) v_1)) 1) (= (+ (* (- 1) v_2) 1 v_1) 0) (>= v_1 0) (= (+ (- 1) v_3) 0) (|fib_without_checking_1060$unknown:16| 0 v_1 v_2 v_3) (|fib_without_checking_1060$unknown:15| v_2 v_10 v_6) (|fib_without_checking_1060$unknown:15| v_2 v_5 v_4) (|fib_without_checking_1060$unknown:15| v_7 v_8 v_9)))
+  )
+  (define-fun |fib_1030$unknown:7|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_4 Int) (v_3 Int) ) (and (= (+ 1 v_0 (* (- 1) v_1)) 0) (= (+ v_2 (- 1)) 0) (not (= v_2 0)) (>= v_1 2) (>= (+ (* (- 1) v_0) v_1) 1) (>= v_0 0) (|fib_without_checking_1060$unknown:15| v_1 v_4 v_3)))
+  )
+)

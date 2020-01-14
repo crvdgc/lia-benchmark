@@ -1,0 +1,35 @@
+sat
+(model
+  (define-fun |update$unknown:22|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:1-v1$unknown:4|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |dotprod$unknown:10|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:2-v2$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |dotprod$unknown:12|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |dotprod$unknown:15|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (or (>= v_1 0) (>= (+ v_1 (* (- 1) v_2)) 1))
+  )
+  (define-fun |dotprod$unknown:16|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+  (define-fun |update$unknown:18|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+)

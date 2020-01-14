@@ -1,0 +1,15 @@
+sat
+(model
+  (define-fun |array_max$unknown:6|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (or (>= (* (- 1) v_3) 0) (>= (+ v_0 (* (- 1) v_3)) 0) (and (>= v_2 1) (>= (+ v_3 (* (- 1) v_0)) 1) (>= v_3 1) (not (= (+ v_1 (* (- 1) v_3)) 0))) (and (>= v_1 0) (>= (* (- 1) v_2) 0) (>= (+ v_3 (* (- 1) v_0)) 1) (>= v_3 1)) (and (>= (+ v_3 (* (- 1) v_0)) 1) (>= v_3 1) (>= (* (- 1) v_1) 1) (>= (* (- 1) v_2) 1)))
+  )
+  (define-fun |array_max$unknown:4|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (= (+ (* (- 1) v_1) v_3 (* (- 1) v_0)) 0)
+  )
+  (define-fun |make_array$unknown:9|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (= (+ (* (- 1) v_1) v_2 (* (- 1) v_0)) 0)
+  )
+)

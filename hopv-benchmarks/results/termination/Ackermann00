@@ -1,0 +1,27 @@
+sat
+(model
+  (define-fun |fail$unknown:21|
+    ( (v_0 Int) ) Bool
+    false
+  )
+  (define-fun |ack_1030$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) ) Bool
+    (= v_3 0)
+  )
+  (define-fun |ack_without_checking_1087$unknown:18|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) (v_8 Int) ) Bool
+    true
+  )
+  (define-fun |bot$unknown:20|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |fail$unknown:22|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |ack_1030$unknown:9|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) (v_7 Int) (v_8 Int) ) Bool
+    true
+  )
+)

@@ -1,0 +1,35 @@
+sat
+(model
+  (define-fun |fact$unknown:9|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |fact$unknown:8|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |exn$unknown:5|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    false
+  )
+  (define-fun |$innerFunc:1-exn$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |exn$unknown:4|
+    ( (v_0 Int) ) Bool
+    false
+  )
+  (define-fun |fact$unknown:6|
+    ( (v_0 Int) ) Bool
+    true
+  )
+  (define-fun |fact$unknown:7|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (= v_0 0) (>= (* (- 1) v_1) 0) (|fact$unknown:6| v_1))
+  )
+  (define-fun |$innerFunc:1-exn$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (and (= v_0 0) (|fact$unknown:6| 1) (|fact$unknown:6| 0))
+  )
+)

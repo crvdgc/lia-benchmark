@@ -1,0 +1,43 @@
+sat
+(model
+  (define-fun |init$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= (+ v_1 (* (- 1) v_0)) 1) (>= (+ v_2 (* (- 1) v_0)) 1) (>= v_0 0))
+  )
+  (define-fun |init$unknown:4|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (>= v_0 1)
+  )
+  (define-fun |init$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (>= (+ v_1 (* (- 1) v_0)) 1) (>= v_0 0))
+  )
+  (define-fun |init$unknown:6|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (>= v_0 1)
+  )
+  (define-fun |make_array$unknown:8|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (exists ( (v_2 Int) (v_3 Int) ) (and (not (= v_3 0)) (= (not (= v_3 0)) (>= (* (- 1) v_2) 0)) (>= v_2 0) (|init$unknown:3| v_0 v_1 v_2)))
+  )
+  (define-fun |update$unknown:14|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_3 Int) ) (and (= (+ (- 1) v_1) 0) (>= (+ (* (- 1) v_2) v_3) 1) (|init$unknown:3| v_0 v_3 (+ v_2 1))))
+  )
+  (define-fun |update$unknown:15|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (forall ( (v_4 Int) ) (or (>= (+ (* (- 1) v_4) v_3) 0) (not (= (+ (- 1) v_2) 0)) (|init$unknown:4| v_0 v_1 v_4 (+ 1 v_3)) (not (|init$unknown:3| v_1 v_4 (+ 1 v_3)))))
+  )
+  (define-fun |update$unknown:11|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (exists ( (v_2 Int) (v_3 Int) ) (and (>= (+ v_2 (* (- 1) v_1)) 1) (>= (+ (* (- 1) v_1) v_0) 1) (= (not (= v_3 0)) (>= (+ (* (- 1) v_1) v_0) 0)) (|init$unknown:3| v_0 v_2 (+ v_1 1)))) (exists ( (v_2 Int) (v_3 Int) ) (and (= (not (= v_3 0)) (>= (+ v_1 (* (- 1) v_0)) 0)) (>= (+ v_1 (* (- 1) v_0)) 1) (>= (+ v_2 (* (- 1) v_1)) 1) (|init$unknown:3| v_0 v_2 (+ v_1 1)))))
+  )
+  (define-fun |update$unknown:12|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (exists ( (v_3 Int) ) (and (>= (+ (* (- 1) v_2) v_3) 1) (|init$unknown:4| v_0 v_1 v_3 v_2) (|update$unknown:11| v_1 v_2)))
+  )
+  (define-fun |make_array$unknown:9|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (and (= v_0 0) (>= (+ v_2 (* (- 1) v_1)) 1) (>= v_1 0) (|make_array$unknown:8| v_1 v_2))
+  )
+)

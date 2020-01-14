@@ -1,0 +1,15 @@
+sat
+(model
+  (define-fun |f$unknown:6|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (forall ( (v_2 Int) (v_3 Int) ) (or (not (= (not (= v_3 0)) (>= v_1 3))) (and (= v_2 0) (= v_3 0)) (not (= (not (= v_2 0)) (>= (* (- 1) v_1) 0))) (>= v_0 1)))
+  )
+  (define-fun |decr$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ v_0 (* (- 1) v_1) 1) 0)
+  )
+  (define-fun |f$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (|decr$unknown:2| v_0 v_1)
+  )
+)

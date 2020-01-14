@@ -1,0 +1,15 @@
+sat
+(model
+  (define-fun |repeat$unknown:4|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ (* (- 1) v_0) v_1) 0)
+  )
+  (define-fun |repeat$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ v_0 (- 1) (* (- 1) v_1)) 0)
+  )
+  (define-fun |succ$unknown:6|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= (+ v_0 (- 1) (* (- 1) v_1)) 0)
+  )
+)

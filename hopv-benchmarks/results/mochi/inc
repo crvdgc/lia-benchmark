@@ -1,0 +1,27 @@
+sat
+(model
+  (define-fun |g$unknown:6|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (>= v_0 0) (>= (+ v_0 (* (- 1) v_1)) 0))
+  )
+  (define-fun |g$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |g$unknown:7|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |ar$unknown:2|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= v_0 0)
+  )
+  (define-fun |update$unknown:13|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    (forall ( (v_4 Int) ) (or (>= (+ v_3 (* (- 1) v_4)) 0) (>= (* (- 1) v_3) 1) (|g$unknown:5| v_0 v_1 v_4) (not (|g$unknown:6| v_3 v_4)) (not (|g$unknown:5| (+ (- 1) v_2) v_3 v_4))))
+  )
+  (define-fun |update$unknown:9|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (exists ( (v_2 Int) (v_3 Int) (v_4 Int) (v_5 Int) (v_6 Int) ) (and (>= (+ v_4 (* (- 1) v_3)) 1) (= (not (= v_6 0)) (>= (+ v_4 (* (- 1) v_3)) 1)) (not (= v_5 0)) (not (= v_6 0)) (= (not (= v_5 0)) (>= v_3 0)) (|g$unknown:6| v_3 v_4) (|g$unknown:5| v_2 v_3 v_4) (|g$unknown:5| v_0 v_1 v_4)))
+  )
+)

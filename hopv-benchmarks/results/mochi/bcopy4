@@ -1,0 +1,51 @@
+sat
+(model
+  (define-fun |bcopy_aux$unknown:16|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (or (>= v_0 0) (>= (+ v_0 (* (- 1) v_1)) 0))
+  )
+  (define-fun |update$unknown:19|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:1-bcopy$unknown:1|
+    ( (v_0 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:1-bcopy$unknown:3|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (= v_0 0)
+  )
+  (define-fun |bcopy_aux$unknown:13|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    (|$innerFunc:1-bcopy$unknown:3| v_0 v_1 v_2)
+  )
+  (define-fun |$innerFunc:1-bcopy$unknown:5|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |bcopy_aux$unknown:15|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |bcopy_aux$unknown:17|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) ) Bool
+    true
+  )
+  (define-fun |$innerFunc:1-bcopy$unknown:6|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |array1$unknown:8|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    (= v_0 0)
+  )
+  (define-fun |array2$unknown:10|
+    ( (v_0 Int) (v_1 Int) ) Bool
+    true
+  )
+  (define-fun |update$unknown:23|
+    ( (v_0 Int) (v_1 Int) (v_2 Int) (v_3 Int) ) Bool
+    true
+  )
+)
