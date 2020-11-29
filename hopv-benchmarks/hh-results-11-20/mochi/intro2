@@ -1,0 +1,4 @@
+lia/mochi/intro2.smt2
+"Satisfied, result:\n"
+fromList [(0,("f$unknown:1",1,true)),(1,("f$unknown:2",2,(= $0 (+ $1 1)))),(2,("f$unknown:3",3,true)),(3,("f$unknown:4",2,true)),(4,("h$unknown:5",1,(> $0 0))),(5,("h$unknown:6",2,true))]
+

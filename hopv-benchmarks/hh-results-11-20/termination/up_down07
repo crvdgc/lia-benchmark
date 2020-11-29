@@ -1,0 +1,4 @@
+lia/termination/up_down07.smt2
+"Satisfied, result:\n"
+fromList [(0,("app_1030$unknown:12",12,true)),(1,("app_1030$unknown:16",11,(= $3 0))),(2,("app_1030$unknown:17",12,true)),(3,("app_without_checking_1193$unknown:29",12,true)),(4,("app_without_checking_1193$unknown:34",12,true)),(5,("bot$unknown:36",2,true)),(6,("down_1031$unknown:41",5,true)),(7,("fail$unknown:42",1,false)),(8,("fail$unknown:43",2,true)),(9,("up_1032$unknown:48",5,true))]
+

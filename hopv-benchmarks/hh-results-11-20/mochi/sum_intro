@@ -1,0 +1,4 @@
+lia/mochi/sum_intro.smt2
+"Satisfied, result:\n"
+fromList [(0,("add$unknown:3",3,(= $0 (+ $2 $1)))),(1,("sum$unknown:5",2,(<= $1 $0)))]
+

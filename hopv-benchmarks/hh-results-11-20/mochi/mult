@@ -1,0 +1,4 @@
+lia/mochi/mult.smt2
+"Satisfied, result:\n"
+fromList [(0,("mult$unknown:3",3,(or (<= $1 $0) (and (> $1 $0) (> $1 0) (<= $2 0)))))]
+

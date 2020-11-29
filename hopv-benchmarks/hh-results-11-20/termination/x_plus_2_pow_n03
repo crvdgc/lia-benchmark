@@ -1,0 +1,4 @@
+lia/termination/x_plus_2_pow_n03.smt2
+"Satisfied, result:\n"
+fromList [(0,("bot$unknown:2",2,true)),(1,("f_1035$unknown:5",3,(= $2 0))),(2,("f_1035$unknown:9",7,true)),(3,("f_without_checking_1189$unknown:16",7,true)),(4,("fail$unknown:17",1,false)),(5,("fail$unknown:18",2,true)),(6,("g_1032$unknown:27",9,true)),(7,("g_1032$unknown:31",9,true)),(8,("succ_1030$unknown:35",4,true))]
+

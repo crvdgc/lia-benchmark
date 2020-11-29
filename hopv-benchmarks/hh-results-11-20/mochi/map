@@ -1,0 +1,4 @@
+lia/mochi/map.smt2
+"Satisfied, result:\n"
+fromList [(0,("map$unknown:2",2,(= $0 $1)))]
+

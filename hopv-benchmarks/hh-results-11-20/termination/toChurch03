@@ -1,0 +1,4 @@
+lia/termination/toChurch03.smt2
+"Satisfied, result:\n"
+fromList [(0,("bot$unknown:2",2,true)),(1,("compose_1030$unknown:14",12,true)),(2,("compose_1030$unknown:26",19,true)),(3,("compose_1030$unknown:31",19,true)),(4,("fail$unknown:32",1,false)),(5,("fail$unknown:33",2,true)),(6,("id_1034$unknown:38",5,true)),(7,("succ_1036$unknown:43",5,true)),(8,("toChurch_1038$unknown:54",11,(= $2 0))),(9,("toChurch_1038$unknown:59",16,true)),(10,("toChurch_1038$unknown:64",16,true)),(11,("toChurch_without_checking_1376$unknown:80",16,true)),(12,("toChurch_without_checking_1376$unknown:85",16,true))]
+

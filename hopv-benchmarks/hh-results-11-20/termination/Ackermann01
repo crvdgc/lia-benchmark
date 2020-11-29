@@ -1,0 +1,4 @@
+lia/termination/Ackermann01.smt2
+"Satisfied, result:\n"
+fromList [(0,("ack_1030$unknown:8",8,(= $3 0))),(1,("ack_1030$unknown:9",9,true)),(2,("ack_without_checking_1087$unknown:18",9,true)),(3,("bot$unknown:20",2,true)),(4,("fail$unknown:21",1,false)),(5,("fail$unknown:22",2,true))]
+

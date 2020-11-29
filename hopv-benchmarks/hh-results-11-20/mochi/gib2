@@ -1,0 +1,4 @@
+lia/mochi/gib2.smt2
+"Satisfied, result:\n"
+fromList [(0,("gib$unknown:4",4,(or (= $0 $3) (and (not (= $0 $3)) (or (= $0 $2) (and (not (= $0 $2)) (not (= $1 0)) (not (= $1 1)) (or (>= $0 0) (and (< $0 0) (or (and (>= $2 0) (< $3 0)) (< $2 0))))))))))]
+

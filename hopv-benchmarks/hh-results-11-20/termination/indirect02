@@ -1,0 +1,4 @@
+lia/termination/indirect02.smt2
+"Satisfied, result:\n"
+fromList [(0,("app_1032$unknown:12",12,true)),(1,("app_1032$unknown:19",12,true)),(2,("bot$unknown:21",2,true)),(3,("f_1036$unknown:24",3,(= $2 0))),(4,("f_1036$unknown:28",7,true)),(5,("f_without_checking_1199$unknown:35",7,true)),(6,("fail$unknown:36",1,false)),(7,("fail$unknown:37",2,true)),(8,("id_1030$unknown:41",4,true))]
+

@@ -1,0 +1,4 @@
+lia/mochi/mc91_95.smt2
+"Satisfied, result:\n"
+fromList [(0,("m$unknown:2",2,(or (and (= $0 (- $1 10)) (> $1 100)) (and (not (= $0 (- $1 10))) (= $0 91)))))]
+

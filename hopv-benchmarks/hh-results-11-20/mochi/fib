@@ -1,0 +1,4 @@
+lia/mochi/fib.smt2
+"Satisfied, result:\n"
+fromList [(0,("fib$unknown:2",2,(and (<= $1 $0) (or (= $0 1) (and (not (= $0 1)) (>= $1 2))))))]
+

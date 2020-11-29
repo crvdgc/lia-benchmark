@@ -1,0 +1,4 @@
+lia/termination/Fibonacci03.smt2
+"Satisfied, result:\n"
+fromList [(0,("bot$unknown:2",2,true)),(1,("fail$unknown:3",1,false)),(2,("fail$unknown:4",2,true)),(3,("fib_1030$unknown:11",3,(and (>= $1 2) (= $0 (- $1 1))))),(4,("fib_1030$unknown:12",4,true)),(5,("fib_1030$unknown:7",3,true)),(6,("fib_1030$unknown:8",4,true)),(7,("fib_without_checking_1060$unknown:15",3,true)),(8,("fib_without_checking_1060$unknown:16",4,true))]
+

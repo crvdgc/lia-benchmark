@@ -1,0 +1,4 @@
+lia/termination/zip01.smt2
+"Satisfied, result:\n"
+fromList [(0,("bot$unknown:2",2,true)),(1,("fail$unknown:3",1,false)),(2,("fail$unknown:4",2,true)),(3,("zip_1030$unknown:12",8,(= $3 0))),(4,("zip_1030$unknown:13",9,true)),(5,("zip_without_checking_1077$unknown:22",9,true))]
+

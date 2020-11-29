@@ -1,0 +1,4 @@
+lia/mochi/fxx.smt2
+"Satisfied, result:\n"
+fromList [(0,("f$unknown:2",2,(or (and (<= $0 0) (<= $1 0)) (> $0 0)))),(1,("f$unknown:3",3,true))]
+

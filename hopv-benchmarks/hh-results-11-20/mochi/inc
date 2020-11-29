@@ -1,0 +1,4 @@
+lia/mochi/inc.smt2
+"Satisfied, result:\n"
+fromList [(0,("ar$unknown:2",2,true)),(1,("g$unknown:5",3,true)),(2,("g$unknown:6",2,(<= 0 $0))),(3,("g$unknown:7",3,true)),(4,("update$unknown:13",4,true)),(5,("update$unknown:9",2,true))]
+
